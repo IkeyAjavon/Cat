@@ -1,0 +1,204 @@
+.prompts .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.prompts .page-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.category-card:active {
+  transform: scale(0.97);
+}
+
+.category-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.12), rgba(244, 162, 97, 0.12));
+  color: var(--coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.2;
+}
+
+.category-card-progress {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mini-progress-track {
+  flex: 1;
+  height: 4px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.mini-progress-fill {
+  height: 100%;
+  background: var(--teal);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.category-card-count {
+  font-size: 0.65rem;
+  color: #95a5a6;
+  font-weight: 600;
+}
+
+.category-card-arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  color: #ccc;
+}
+
+/* Category detail */
+.category-title {
+  font-size: 1.3rem;
+  color: var(--charcoal);
+  margin: 0 0 16px;
+}
+
+.prompt-progress {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--teal);
+  background: rgba(78, 205, 196, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.prompts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.prompt-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  transition: all 0.2s ease;
+}
+
+.prompt-card.completed {
+  opacity: 0.6;
+}
+
+.prompt-card.completed .prompt-text {
+  text-decoration: line-through;
+}
+
+.prompt-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.prompt-text {
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
+.prompt-suggestion {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.prompt-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(78, 205, 196, 0.1);
+  color: var(--teal);
+}
+
+.prompt-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  color: transparent;
+  margin-top: 2px;
+}
+
+.prompt-check.checked {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: white;
+}
+
+/* Add custom prompt */
+.add-prompt-btn {
+  width: 100%;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.add-prompt-form {
+  margin-top: 12px;
+}
+
+.add-prompt-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* New category modal extras */
+.new-prompt-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
+.new-prompt-row .input-field {
+  flex: 1;
+}

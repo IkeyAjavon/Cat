@@ -1,0 +1,203 @@
+.dashboard {
+  padding-bottom: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.4rem;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--coral), var(--amber));
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cat-showcase {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 8px;
+}
+
+.xp-section {
+  margin-bottom: 16px;
+}
+
+.prompt-of-day {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.prompt-of-day:active {
+  transform: scale(0.98);
+}
+
+.potd-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--amber);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.potd-text {
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  line-height: 1.5;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.potd-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.potd-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(78, 205, 196, 0.12);
+  color: var(--teal);
+}
+
+.potd-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(244, 162, 97, 0.12);
+  color: var(--amber);
+}
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.action-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.action-card:active {
+  transform: scale(0.97);
+}
+
+.action-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.log-icon {
+  background: rgba(255, 107, 107, 0.12);
+  color: var(--coral);
+}
+
+.prompt-icon {
+  background: rgba(244, 162, 97, 0.12);
+  color: var(--amber);
+}
+
+.action-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.action-text strong {
+  font-size: 0.85rem;
+  color: var(--charcoal);
+}
+
+.action-text span {
+  font-size: 0.7rem;
+  color: #95a5a6;
+}
+
+.action-arrow {
+  margin-left: auto;
+  color: #ccc;
+  flex-shrink: 0;
+}
+
+.today-activity {
+  margin-top: 20px;
+}
+
+.today-activity h3 {
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  margin: 0 0 10px;
+}
+
+.today-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.today-entry:last-child {
+  border-bottom: none;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.status-idea { background: #95a5a6; }
+.status-dot.status-in-progress { background: var(--amber); }
+.status-dot.status-posted { background: var(--teal); }
+
+.today-entry-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.today-entry-type {
+  font-size: 0.7rem;
+  color: #95a5a6;
+  flex-shrink: 0;
+}
